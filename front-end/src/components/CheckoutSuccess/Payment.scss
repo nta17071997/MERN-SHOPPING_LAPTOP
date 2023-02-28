@@ -1,0 +1,12 @@
+.orderSuccess{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin-top: 60px;
+    svg.MuiSvgIcon-root {
+        color: green;
+        font-size: 120px;
+    }
+}

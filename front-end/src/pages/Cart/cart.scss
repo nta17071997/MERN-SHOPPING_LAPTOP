@@ -1,0 +1,97 @@
+.cart_container{
+    h2 {
+        text-align: center;
+        padding: 10px 0;
+    }
+    img{
+        width: 60px;
+        border-radius: 0;
+    }
+    .cart_titles  {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        align-items: center;
+        font-size: 21px;
+        padding: 10px 60px;
+        border-bottom: 1px solid rgba(78, 76, 76, 0.2039215686);
+        text-align: center;
+    }
+    .cart_item{
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        align-items: center;
+        border-bottom: 1px solid #808080d7;
+        padding: 20px 60px 20px 20px ;
+        text-align: center;
+        .cart_product {
+            display: flex;
+            gap: 10px;
+            .cart_product-title{
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                .btn-remove {
+                    padding: 10px !important;
+                    background-color: #f13c29de !important;
+                }
+            }
+        }
+        .cart_product-quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            .count{
+                width: 40px;
+                height: 40px;
+                font-size: 30px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+.cart_summary {
+    margin: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    .cart_checkout {
+        background: #99999969;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: -4px 3px 6px 2px #747171;
+        .subtotal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            span{
+                font-size: 20px;
+            }
+        }
+        p {
+            color: darkslategray;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .checkout {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            .continue_shopping {
+                display: flex;
+                align-items: center;
+                i{
+                    font-size: 20px;
+                }
+            }
+            .cart_login-to-checkout{
+                background-color: #f1c40f;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: #3f51b5;
+    padding: 0 80px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    .links {
+        display: flex;
+        align-items: center;
+        .info {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            p,a {
+                font-size: 15px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    h2 {
+        font-size: 32px;
+        color: white;
+    }
+    img.avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 2px solid deeppink;
+        cursor: pointer;
+        &:hover {
+            transform: scale(0.9);
+            border: white;
+        }
+    }
+}
+.nav-bag {
+    display: flex;
+    align-items: center;
+    position: relative;
+    i {
+        color: white;
+        font-size: 30px;
+    }
+    .bag-quantity {
+        position: absolute;
+        top: -9px;
+        right: -20px;
+        width: 26px;
+        height: 26px;
+        background: #ff0000e0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+}
+.authLinks, .links{
+    a {
+        color: white;
+        padding: 0 20px;
+        font-size: 20px;
+        &:hover{
+            color: black;
+        }
+    }
+}
